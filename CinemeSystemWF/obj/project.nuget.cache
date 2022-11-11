@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tB/plutupVo00e2OUgEv9OfpQnIARusgTrfqv1lrv6kVwM4P+Y1MZmx8fwRORzmdFuoXuV739f7C7Gea3gd/zg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemeSystemWF\\CinemaSystemWF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\quang\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
