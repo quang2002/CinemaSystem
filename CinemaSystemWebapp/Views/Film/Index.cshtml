@@ -5,6 +5,14 @@
     ViewBag.User = CinemaSystemWebapp.Utils.Authentication.GetUserByCookies(Context.Request.Cookies);
 }
 
+@if (ViewBag.Message is not null)
+{
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        @ViewBag.Message
+        <button type="button" class="btn-close" onclick="this.parentNode.remove()"></button>
+    </div>
+}
+
 <div class="container p-4 text-white-50">
     <div class="row">
         <div class="col-sm-12 col-md-6 d-flex justify-content-center flex-column">
@@ -133,12 +141,25 @@
                      alt="">
                 </div>
 
+                @{
+                    var isAvailable = show.End > DateTime.Now;
+                    var isPresent = show.Start < DateTime.Now && isAvailable;
+                }
+
                 <div class="col-12 col-sm-8 col-md-9 mb-2 d-flex flex-column justify-content-center">
                     <h6 class="text-truncate text-white m-0 mt-2">
                         @show.Room?.Name
-                        @if (currentDatetime > show.Start)
+                        @if (isPresent)
                         {
                             <span class="badge bg-success">Now</span>
+                        }
+                        else if (isAvailable)
+                        {
+                            <span class="badge bg-warning">Future</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Past</span>
                         }
                     </h6>
 

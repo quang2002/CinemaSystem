@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KrOnAMAiviYJ84z2RViRTxRz6RlOoA/7wtQ4SIAicUA=",
+  "Hash": "24IbCWzwlVwGgHr/vgvDiy2z6yh7nmK2J70+bFWZDUU=",
   "Source": "CinemaSystemWebapp",
   "BasePath": "_content/CinemaSystemWebapp",
   "Mode": "Default",
@@ -357,12 +357,12 @@
       "OriginalItemSpec": "wwwroot\\css\\watch.css"
     },
     {
-      "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\error-pages\\403.jsp",
+      "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\error-pages\\403.html",
       "SourceId": "CinemaSystemWebapp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\",
       "BasePath": "_content/CinemaSystemWebapp",
-      "RelativePath": "error-pages/403.jsp",
+      "RelativePath": "error-pages/403.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -371,15 +371,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\error-pages\\403.jsp"
+      "OriginalItemSpec": "wwwroot\\error-pages\\403.html"
     },
     {
-      "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\error-pages\\404.jsp",
+      "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\error-pages\\404.html",
       "SourceId": "CinemaSystemWebapp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\",
       "BasePath": "_content/CinemaSystemWebapp",
-      "RelativePath": "error-pages/404.jsp",
+      "RelativePath": "error-pages/404.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -388,15 +388,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\error-pages\\404.jsp"
+      "OriginalItemSpec": "wwwroot\\error-pages\\404.html"
     },
     {
-      "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\error-pages\\500.jsp",
+      "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\error-pages\\500.html",
       "SourceId": "CinemaSystemWebapp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\",
       "BasePath": "_content/CinemaSystemWebapp",
-      "RelativePath": "error-pages/500.jsp",
+      "RelativePath": "error-pages/500.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -405,7 +405,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\error-pages\\500.jsp"
+      "OriginalItemSpec": "wwwroot\\error-pages\\500.html"
     },
     {
       "Identity": "C:\\Users\\quang\\source\\repos\\CinemaSystem\\CinemaSystemWebapp\\wwwroot\\favicon.ico",

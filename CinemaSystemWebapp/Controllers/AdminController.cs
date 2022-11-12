@@ -35,7 +35,7 @@ namespace CinemaSystemWebapp.Controllers
             ViewBag.Films = dbcontext.Films.ToList();
 
             ViewBag.ActiveTab = tab;
-            
+
             return View(AdminUser);
         }
 
@@ -47,7 +47,7 @@ namespace CinemaSystemWebapp.Controllers
 
             if (film is null || roomObj is null)
             {
-                return new JsonResult(new { success = false, message = "Film or room not found" });
+                return RedirectToAction("Index", "Film", new { id = id, message = "Invalid film or room!" });
             }
 
             var show = new Show
@@ -59,10 +59,15 @@ namespace CinemaSystemWebapp.Controllers
                 TicketPrice = price
             };
 
+            if (dbcontext.Shows.Any(s => s.RoomId == show.RoomId && ((s.End > show.Start && s.End < show.End) || (s.Start > show.Start && s.Start < show.End) || (s.Start < show.Start && s.End > show.End))))
+            {
+                return RedirectToAction("Index", "Film", new { id = id, message = "Show time is not valid!" });
+            }
+
             dbcontext.Shows.Add(show);
             dbcontext.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Film", new { id = id, message = "Create show successful!" });
         }
 
         [HttpPost]

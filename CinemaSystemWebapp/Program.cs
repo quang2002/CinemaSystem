@@ -5,16 +5,14 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-}
+// Configure the HTTP request pipeline
 app.UseStaticFiles();
 
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseStatusCodePagesWithRedirects("/Error?code={0}");
 
 app.MapControllerRoute(
     name: "default",

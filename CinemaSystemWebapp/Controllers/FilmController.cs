@@ -14,8 +14,9 @@ namespace CinemaSystemWebapp.Controllers
             dbcontext.Dispose();
         }
 
-        public IActionResult Index(int id)
+        public IActionResult Index(int id, string? message)
         {
+            ViewBag.Message = message;
             ViewBag.Rooms = dbcontext.Rooms.ToList();
             return View(
                 dbcontext.Films
